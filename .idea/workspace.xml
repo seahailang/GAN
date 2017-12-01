@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1951e7c-e81c-4759-aaf9-0b9f8f3bc4e4" name="Default" comment="first repo of GAN and VAE">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/nohup.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/uploaded/colors.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/uploaded/colors3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/uploaded/gen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/uploaded/picasso.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/uploaded/sanae.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/img/bootstrap-colorpicker/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/img/bootstrap-colorpicker/hue-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/img/bootstrap-colorpicker/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/img/bootstrap-colorpicker/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/image_examples/armscross.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/image_examples/armscross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/image_examples/picasso.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/image_examples/sanae.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/1_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/1_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/2_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/2_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/3_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/3_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/4_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/4_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/5_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/5_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/6_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/6_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/7_color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/7_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/images/a_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/acgan-fig-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/acgan-result-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/acgan-result.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/demo_result.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/flask_with_pretrain_model.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/flask_with_pretrain_model_00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/infogan-fig-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/infogan-result-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/infogan-result.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/mac_blogs_deepcolor-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/mac_blogs_deepcolor-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/mltookit_log_00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/mnist_client_result.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/images/mnist_server.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/tsne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/data/origin_data/sample.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/checkpoint/checkpoint.ckpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/checkpoint/checkpoint.ckpt.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/GAN.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/discriminator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/generate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/generator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/mnist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/optimizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/queue_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/train.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Info-GAN/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoGAN/discriminator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoGAN/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InfoGAN/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VAE-demo/conv_vae.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VAE-demo/linear_vae.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/discriminator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/generate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/generator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/mnist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/optimizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/queue_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/train.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/GAN/AC-GAN/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/input_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/train_mnist_multi_perceptron.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/train_mnist_single_perceptron.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/algorithm/train_mnist_softmax.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/download_images.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/download_images_multithread.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/download_images_v2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/lines.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/ops.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/report.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/testserver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/tf_upgrade.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/css/bootstrap-colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/css/bootstrap-colorpicker.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/css/bootstrap-colorpicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/css/bootstrap-colorpicker.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/js/bootstrap-colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/colorpicker/js/bootstrap-colorpicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/css/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/draw.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/jquery-1.11.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/deepcolor/web/sketch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/Constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/Dict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/IO.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/copus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/preprocess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/dataset_helpers/preprocess.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/NMT/scripts/models/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/gen_w2v.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/visual_embeddings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/visual_word2vec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/word2vec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/Tag2Vec/scripts/word2vec_basic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/bow_text_classifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/cnn_lstm_text_classifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/cnn_text_classifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/cnn_text_classifier_v2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/cnn_text_classifier_v3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/dataset_helpers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/dataset_helpers/cut_doc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/dataset_helpers/doc_dataset.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/dataset_helpers/gen_w2v.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/lstm_text_classifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/nlp/text_classifier/scripts/tfidf_text_classifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/READMD.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/checkpoint/checkpoint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/generate_grpc_file.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/mnist_client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/mnist_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/predict.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/predict_pb2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/serving/train_mnist_softmax4serving.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow-101-master/tf_upgrade.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding>
+                <element signature="e#188#226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linear_vae.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VAE-demo/linear_vae.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-155">
+              <caret line="96" column="23" lean-forward="false" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+              <folding>
+                <element signature="e#186#224#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conv_vae.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VAE-demo/conv_vae.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="295" column="23" lean-forward="false" selection-start-line="295" selection-start-column="23" selection-end-line="295" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="679">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control_flow_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/control_flow_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="1758" column="24" lean-forward="false" selection-start-line="1758" selection-start-column="19" selection-end-line="1758" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/client/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="1346" column="62" lean-forward="false" selection-start-line="1346" selection-start-column="62" selection-end-line="1346" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="optimizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/training/optimizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="357" column="33" lean-forward="false" selection-start-line="357" selection-start-column="33" selection-end-line="357" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nn_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="1431" column="4" lean-forward="false" selection-start-line="1431" selection-start-column="4" selection-end-line="1431" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="losses_impl.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3551">
+              <caret line="524" column="4" lean-forward="false" selection-start-line="524" selection-start-column="4" selection-end-line="524" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="math_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/math_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="2105" column="46" lean-forward="false" selection-start-line="2105" selection-start-column="46" selection-end-line="2105" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tensorflow" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>64</find>
+      <find>10</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/InfoGAN/utils.py" />
+        <option value="$PROJECT_DIR$/InfoGAN/discriminator.py" />
+        <option value="D:/anaconda/Lib/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py" />
+        <option value="$PROJECT_DIR$/VAE-demo/vae.py" />
+        <option value="$PROJECT_DIR$/VAE-demo/test_vae.py" />
+        <option value="$PROJECT_DIR$/VAE-demo/linear_vae.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/VAE-demo/conv_vae.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="632" />
+    <option name="y" value="211" />
+    <option name="width" value="960" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GAN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GAN" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="D:/anaconda/envs/python27/python.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GAN" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GAN\VAE-demo" />
+      <recent name="E:\GAN\VAE-demo\MNIST_data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.conv_vae">
+    <configuration name="conv_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VAE-demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GAN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VAE-demo/conv_vae.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="linear_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VAE-demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GAN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VAE-demo/linear_vae.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test_vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VAE-demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GAN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VAE-demo/test_vae.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="vae" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VAE-demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GAN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VAE-demo/vae.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.vae" />
+      <item index="1" class="java.lang.String" itemvalue="Python.linear_vae" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_vae" />
+      <item index="3" class="java.lang.String" itemvalue="Python.conv_vae" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.conv_vae" />
+        <item index="1" class="java.lang.String" itemvalue="Python.linear_vae" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_vae" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vae" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1951e7c-e81c-4759-aaf9-0b9f8f3bc4e4" name="Default" comment="" />
+      <created>1511502914230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511502914230</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="5">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5337983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33673468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33673468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5337983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first repo of GAN and VAE" />
+    <option name="LAST_COMMIT_MESSAGE" value="first repo of GAN and VAE" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="23" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Info-GAN/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34424">
+          <caret line="1344" column="4" lean-forward="false" selection-start-line="1344" selection-start-column="4" selection-end-line="1344" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoGAN/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="95" column="36" lean-forward="false" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34450">
+          <caret line="1344" column="4" lean-forward="false" selection-start-line="1344" selection-start-column="4" selection-end-line="1344" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoGAN/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#196#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="260">
+            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/contrib/layers/python/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1438">
+          <caret line="2558" column="25" lean-forward="false" selection-start-line="2558" selection-start-column="16" selection-end-line="2558" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1809">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoGAN/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoGAN/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#188#226#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoGAN/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#196#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="1213" column="4" lean-forward="false" selection-start-line="1213" selection-start-column="4" selection-end-line="1213" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="5598" column="4" lean-forward="false" selection-start-line="5598" selection-start-column="4" selection-end-line="5598" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/platform/flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="785" column="4" lean-forward="false" selection-start-line="785" selection-start-column="4" selection-end-line="785" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/57359179/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="1659" column="4" lean-forward="false" selection-start-line="1659" selection-start-column="4" selection-end-line="1659" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/gen_nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="763" column="0" lean-forward="false" selection-start-line="763" selection-start-column="0" selection-end-line="763" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Info-GAN/queue_context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="203" column="47" lean-forward="false" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="812" column="4" lean-forward="false" selection-start-line="812" selection-start-column="4" selection-end-line="812" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="690" column="0" lean-forward="false" selection-start-line="690" selection-start-column="0" selection-end-line="690" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/summary/summary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="157" column="14" lean-forward="false" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="1346" column="62" lean-forward="false" selection-start-line="1346" selection-start-column="62" selection-end-line="1346" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="2105" column="46" lean-forward="false" selection-start-line="2105" selection-start-column="46" selection-end-line="2105" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3551">
+          <caret line="524" column="4" lean-forward="false" selection-start-line="524" selection-start-column="4" selection-end-line="524" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/control_flow_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="1758" column="24" lean-forward="false" selection-start-line="1758" selection-start-column="19" selection-end-line="1758" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VAE-demo/MNIST_data/linear_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1431" column="4" lean-forward="false" selection-start-line="1431" selection-start-column="4" selection-end-line="1431" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/training/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="357" column="33" lean-forward="false" selection-start-line="357" selection-start-column="33" selection-end-line="357" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VAE-demo/vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/tensorflow/python/ops/partitioned_variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="234" column="4" lean-forward="false" selection-start-line="234" selection-start-column="4" selection-end-line="234" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VAE-demo/test_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2121">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="e#188#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VAE-demo/linear_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155">
+          <caret line="96" column="23" lean-forward="false" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+          <folding>
+            <element signature="e#186#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VAE-demo/conv_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="295" column="23" lean-forward="false" selection-start-line="295" selection-start-column="23" selection-end-line="295" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
