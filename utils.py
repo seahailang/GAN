@@ -16,6 +16,7 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
+import os
 from datetime import datetime
 
 def conv_layer(tensor,filters,k_size,strides,bias=True,activate=tf.nn.relu,name=''):
@@ -52,7 +53,30 @@ def linear_layer(tensor,units,activate=tf.nn.relu,weights_initializer=None,name=
     tensor = activate((tf.nn.bias_add(tf.matmul(tensor, weights), bias)))
     return tensor
 
-FLAGS = tf.app.flags.FLAGS
+def de_conv_layer(tensor,filter,kernel,stride,activate=tf.nn.relu,name=''):
+
+    filter_shape = [kernel[0], kernel[1], filter, tensor.shape[-1]]
+    weights = tf.get_variable(name='weight'+name,
+                              shape=filter_shape,
+                              dtype=tf.float32,
+                              initializer=tf.random_normal_initializer(-0.06, 0.06))
+    strides = [1, stride, stride, 1]
+    deconv_size = [int(tensor.shape[0]),int(tensor.shape[1])*stride,int(tensor.shape[2])*stride,filter]
+    tensor = tf.nn.conv2d_transpose(tensor, weights, output_shape=deconv_size, strides=strides)
+    bias = tf.get_variable(name='bias'+name, shape=[deconv_size[-1]])
+    tensor = activate(tf.nn.bias_add(tensor, bias))
+    return tensor
+
+def load_or_initial_model(sess,ckpt,saver,init_op):
+    if not os.path.exists(ckpt):
+        os.mkdir(ckpt)
+    ckpt = tf.train.get_checkpoint_state(ckpt)
+
+    if ckpt and ckpt.model_checkpoint_path:
+        saver.restore(sess, ckpt.model_checkpoint_path)
+    else:
+
+        sess.run(init_op)
 
 if __name__ == '__main__':
     pass
