@@ -104,6 +104,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-MNIST_data/
 tensorflow-101-master/
 /tensorflow-101-master.zip
+*/ckpt*/
