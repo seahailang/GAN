@@ -277,7 +277,6 @@ def train(vae,dataset):
             writer.add_summary(summary_str, global_step=g_step)
             if g_step%100==0:
                 # summary_str = sess.run(summary_op)
-
                 print(g_step,l)
                 print(p[1][0][:5],p[0][0][:5])
                 # print(grads)
