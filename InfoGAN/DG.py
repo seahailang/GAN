@@ -26,7 +26,7 @@ class Discriminator(object):
         self.image_w = FLAGS.image_w
         self.image_h = FLAGS.image_h
         self.channel = FLAGS.channel
-        self.linear_units = [500,500]
+        self.linear_units = [128,500]
 
     def input(self):
         inputs = tf.placeholder(dtype=tf.float32,shape=(self.batch_size,self.image_w*self.image_h),name='inputs')
@@ -62,10 +62,10 @@ class Generator(object):
         self.image_w = FLAGS.image_w
         self.image_h = FLAGS.image_h
         self.channel = FLAGS.channel
-        self.linear_units = [500, 500,500]
+        self.linear_units = [128, 500,500]
     def build_graph(self,tensor):
         with tf.variable_scope('G_linear1'):
-            tensor = utils.linear_layer(tensor,7*7)
+            tensor = utils.linear_layer(tensor,self.linear_units[0])
             # tensor = tf.reshape(tensor,[self.batch_size,7,7,1])
         # with tf.variable_scope('G_deconv_1'):
         #     tensor = utils.de_conv_layer(tensor,32,[3,3],2)
@@ -75,7 +75,7 @@ class Generator(object):
         # with tf.variable_scope('G_linear2'):
         #     tensor = utils.linear_layer(tensor,self.linear_units[1])
         with tf.variable_scope('G_linear3'):
-            tensor = utils.linear_layer(tensor,self.image_w*self.image_h*self.channel,activate=lambda x:tf.nn.relu6(x)/6)
+            tensor = utils.linear_layer(tensor,self.image_w*self.image_h*self.channel,activate=tf.nn.sigmoid)
         image = tf.reshape(tensor, shape=(self.batch_size, self.image_w, self.image_h, self.channel))
         tf.summary.image('output_image', image)
         tensor = tf.reshape(tensor,[tensor.shape[0],-1])
@@ -91,7 +91,7 @@ class Sampler(object):
         self.batch_size = int(FLAGS.batch_size/2)
         self.latent_dims = FLAGS.latent_dims
     def sample(self):
-        z = tf.random_uniform(shape=[self.batch_size,self.latent_dims],minval=-0.6,maxval=0.6)
+        z = tf.random_uniform(shape=[self.batch_size,self.latent_dims],minval=-1,maxval=1)
         return z
 
 if __name__ == '__main__':
