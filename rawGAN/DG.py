@@ -16,8 +16,10 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-from config import FLAGS
+
 import utils
+from rawGAN.config import FLAGS
+
 
 class Discriminator(object):
     def __init__(self):
@@ -35,9 +37,9 @@ class Discriminator(object):
         return inputs
     def build_graph(self,tensor):
         with tf.variable_scope('D_linear1',reuse=tf.AUTO_REUSE):
-            tensor = utils.linear_layer(tensor,self.linear_units[0])
-        # with tf.variable_scope('D_linear2',reuse=tf.AUTO_REUSE):
-        #     tensor = utils.linear_layer(tensor,self.linear_units[1])
+            tensor = utils.linear_layer(tensor,self.linear_units[0],lambda x :tf.nn.leaky_relu(x,0.5))
+        with tf.variable_scope('D_linear2',reuse=tf.AUTO_REUSE):
+            tensor = utils.linear_layer(tensor,self.linear_units[1],lambda x :tf.nn.leaky_relu(x,0.5))
         # with tf.variable_scope('D_soft_max',reuse=tf.AUTO_REUSE):
         #     logits = utils.linear_layer(tensor,1,activate=tf.nn.sigmoid)
         # tensor = tf.reshape(tensor,[tensor.shape[0],FLAGS.image_w,FLAGS.image_h,1])
@@ -47,7 +49,8 @@ class Discriminator(object):
         #     tensor = utils.conv_layer(tensor,64,[3,3],1)
         # tensor = tf.reshape(tensor,[tensor.shape[0],-1])
         with tf.variable_scope('linear'):
-            logits = utils.linear_layer(tensor,1,lambda x:x)
+            # logits = utils.linear_layer(tensor,1,lambda x:x)
+            logits = utils.linear_layer(tensor, 1, tf.nn.sigmoid)
         return logits
     def __call__(self,inputs):
         with tf.variable_scope('Discriminator',reuse=tf.AUTO_REUSE):

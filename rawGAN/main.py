@@ -15,18 +15,20 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
-import utils
-from tensorflow.examples.tutorials.mnist import input_data
-import sys
 import os
-import matplotlib.pyplot as plt
+import sys
+
 import matplotlib.gridspec as gridspec
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow.examples.tutorials.mnist import input_data
+
+import utils
+
 sys.path.append('./')
-from datetime import datetime
 import DG
 
-from config import FLAGS
+from rawGAN.config import FLAGS
 
 
 class Model(object):
@@ -101,11 +103,14 @@ def train(gan,datasets):
     tf.summary.scalar('acc',acc)
     true_d_loss = gan.compute_D_loss(logits=true_logits, labels=tf.ones(shape=true_logits.shape))
     false_d_loss = gan.compute_D_loss(logits=false_logits, labels=tf.zeros(shape=false_logits.shape))
-    d_loss = true_d_loss+false_d_loss
+    # d_loss = true_d_loss+false_d_loss
+    d_loss = tf.reduce_mean(false_logits)-tf.reduce_mean(true_logits)
     tf.summary.scalar('true_d_loss',true_d_loss)
     tf.summary.scalar('false_d_loss',false_d_loss)
-    g_loss = gan.compute_D_loss(logits=false_logits, labels=tf.ones(shape=false_logits.shape))
+    # g_loss = gan.compute_D_loss(logits=false_logits, labels=tf.ones(shape=false_logits.shape))
+    g_loss = -2*tf.reduce_mean(false_logits)
     tf.summary.scalar('g_loss', g_loss)
+
     # true_d_op = gan.train_op(true_d_loss,'D')
     # false_d_op = gan.train_op(d_loss,'D')
     d_op,g_op = gan.train_op(d_loss=d_loss,g_loss=g_loss)
@@ -139,18 +144,19 @@ def train(gan,datasets):
             #     sess.run(d_op,feed_dict=feed_dict)
             # for i in range(10):
             #     sess.run(d_op,feed_dict=feed_dict)
-
+            if False:
+                pass
             # if a<0.5:
             #     a,loss_d, loss_g, _, g_step, summary_str = \
             #         sess.run([acc, d_loss, g_loss, train_op[0], global_step, summary_op], feed_dict=feed_dict)
             #     D_step+=1
-            if a>10.5:
-                # a, loss_d, loss_g, _, g_step, summary_str = \
-                #     sess.run([acc, d_loss, g_loss, train_op, global_step, summary_op], feed_dict=feed_dict)
-                a, loss_d, loss_g, _, g_step, summary_str = \
-                    sess.run([acc, d_loss, g_loss, train_op[1], global_step, summary_op], feed_dict=feed_dict)
-                G_step+=1
-                D_step+=0
+            # elif a>0.8:
+            #     # a, loss_d, loss_g, _, g_step, summary_str = \
+            #     #     sess.run([acc, d_loss, g_loss, train_op, global_step, summary_op], feed_dict=feed_dict)
+            #     a, loss_d, loss_g, _, g_step, summary_str = \
+            #         sess.run([acc, d_loss, g_loss, train_op[1], global_step, summary_op], feed_dict=feed_dict)
+            #     G_step+=1
+            #     D_step+=0
             else:
                 a, loss_d, loss_g, _, g_step, summary_str = \
                     sess.run([acc, d_loss, g_loss, train_op, global_step, summary_op], feed_dict=feed_dict)
