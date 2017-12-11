@@ -107,3 +107,4 @@ venv.bak/
 tensorflow-101-master/
 /tensorflow-101-master.zip
 */ckpt*/
+*/out/
