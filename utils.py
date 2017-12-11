@@ -17,6 +17,8 @@ from __future__ import print_function
 
 import tensorflow as tf
 import os
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 from datetime import datetime
 
 def conv_layer(tensor,filters,k_size,strides,bias=True,activate=tf.nn.relu,name=''):
@@ -39,7 +41,8 @@ def conv_layer(tensor,filters,k_size,strides,bias=True,activate=tf.nn.relu,name=
 
 def linear_layer(tensor,units,activate=tf.nn.relu,weights_initializer=None,name=''):
     if not weights_initializer:
-        weights_initializer = tf.random_uniform_initializer(-0.006, 0.006)
+        val = tf.sqrt(6.0/(int(tensor.shape[-1])+units))
+        weights_initializer = tf.random_uniform_initializer(minval=-val,maxval=val)
     weights = tf.get_variable(name=name+'weights',
                               shape=[tensor.shape[-1],units],
                               dtype=tf.float32,
@@ -67,6 +70,11 @@ def de_conv_layer(tensor,filter,kernel,stride,activate=tf.nn.relu,name=''):
     tensor = activate(tf.nn.bias_add(tensor, bias))
     return tensor
 
+def xavier_init(size):
+    in_dim = size[0]
+    xavier_stddev = 1. / tf.sqrt(in_dim / 2.)
+    return tf.random_normal(shape=size, stddev=xavier_stddev)
+
 def load_or_initial_model(sess,ckpt,saver,init_op):
     if not os.path.exists(ckpt):
         os.mkdir(ckpt)
@@ -77,6 +85,21 @@ def load_or_initial_model(sess,ckpt,saver,init_op):
     else:
 
         sess.run(init_op)
+
+def plot(samples):
+    fig = plt.figure(figsize=(4, 4))
+    gs = gridspec.GridSpec(4, 4)
+    gs.update(wspace=0.05, hspace=0.05)
+
+    for i, sample in enumerate(samples):
+        ax = plt.subplot(gs[i])
+        plt.axis('off')
+        ax.set_xticklabels([])
+        ax.set_yticklabels([])
+        ax.set_aspect('equal')
+        plt.imshow(sample.reshape(28, 28), cmap='Greys_r')
+
+    return fig
 
 if __name__ == '__main__':
     pass
