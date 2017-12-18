@@ -21,7 +21,7 @@ import tensorflow as tf
 FLAGS = tf.app.flags.FLAGS
 
 tf.app.flags.DEFINE_integer('batch_size',64,'')
-tf.app.flags.DEFINE_integer('latent_dims',16,'')
+tf.app.flags.DEFINE_integer('latent_dims',100,'')
 tf.app.flags.DEFINE_float('learning_rate',0.00001,'')
 tf.app.flags.DEFINE_integer('cat_num',10,'')
 tf.app.flags.DEFINE_integer('channel',1,

@@ -33,8 +33,10 @@ class alpha_E(gan_utils.BaseGenerator,mnist_utils.MnistModel):
     def build_graph(self,tensor):
         with tf.variable_scope('linear1'):
             tensor = utils.linear_layer(tensor,128)
-        with tf.variable_scope('linear2'):
-            tensor = utils.linear_layer(tensor,16,activate=tf.nn.sigmoid)
+        # with tf.variable_scope('linear2'):
+        #     tensor = utils.linear_layer(tensor,500)
+        with tf.variable_scope('linear3'):
+            tensor = utils.linear_layer(tensor,FLAGS.latent_dims,lambda x:x)
         return tensor
     def input(self):
         inputs=tf.placeholder(dtype=tf.float32,shape=[self.batch_size,self.example_shape])
@@ -50,10 +52,12 @@ class alpha_G(gan_utils.BaseGenerator,mnist_utils.MnistModel):
         gan_utils.BaseGenerator.__init__(self,batch_size)
         mnist_utils.MnistModel.__init__(self)
     def build_graph(self,tensor):
-        # with tf.variable_scope('linear1'):
-        #     tensor = utils.linear_layer(tensor,128)
-        with tf.variable_scope('linear2'):
-            tensor = utils.linear_layer(tensor,self.example_shape,activate=tf.sigmoid)
+        with tf.variable_scope('linear1'):
+            tensor = utils.linear_layer(tensor,128)
+            # with tf.variable_scope('linear2'):
+            #     tensor = utils.linear_layer(tensor, 500)
+        with tf.variable_scope('linear3'):
+            tensor = utils.linear_layer(tensor,self.example_shape,tf.sigmoid)
         return tensor
     def __call__(self,tensor):
         with tf.variable_scope('Generator',reuse=tf.AUTO_REUSE):
@@ -68,7 +72,8 @@ class alpha_Dz(gan_utils.BaseDiscriminator):
         with tf.variable_scope('linear1'):
             tensor = utils.linear_layer(tensor,128)
         with tf.variable_scope('linear2'):
-            tensor = utils.linear_layer(tensor,1,activate=lambda x:x)
+            tensor = utils.linear_layer(tensor,1,activate=tf.nn.sigmoid)
+            # tensor = utils.linear_layer(tensor, 1, activate=lambda x:x)
         return tensor
     def __call__(self,tensor):
         with tf.variable_scope('z_Discriminator',reuse=tf.AUTO_REUSE):
@@ -76,8 +81,20 @@ class alpha_Dz(gan_utils.BaseDiscriminator):
 
 class Sampler(gan_utils.BaseSampler):
     def sample(self):
-        z= tf.zeros(shape=[self.batch_size,self.latent_dims])
-        return tf.random_normal(shape=[self.batch_size,self.latent_dims])
+        # z = []
+        # logits= tf.tile([[0.1]*10],[self.batch_size,1])
+        #
+        # c = tf.multinomial(logits=logits,num_samples=1)
+        # c = tf.one_hot(c,depth=10)
+        # for i in range(10):
+        #     z.append(tf.random_normal(shape=[self.batch_size,1,self.latent_dims],mean=i))
+        # z = tf.concat(z,axis=1)
+        # latent = tf.matmul(c,z)
+        # latent = tf.reshape(latent,[self.batch_size,self.latent_dims])
+        # latent = tf.random_normal([self.batch_size,self.latent_dims],stddev=100)
+        latent = tf.random_uniform([self.batch_size,self.latent_dims],minval=-1,maxval=1)
+        # latent = tf.nn.sigmoid(latent)
+        return latent
 
 
 class alpha_D(gan_utils.BaseDiscriminator,mnist_utils.MnistModel):
@@ -89,6 +106,8 @@ class alpha_D(gan_utils.BaseDiscriminator,mnist_utils.MnistModel):
     def build_graph(self,tensor):
         with tf.variable_scope('linear1'):
             tensor = utils.linear_layer(tensor,128)
+        # with tf.variable_scope('linear1_'):
+        #     tensor = utils.linear_layer(tensor,500)
         with tf.variable_scope('linear2'):
             tensor = utils.linear_layer(tensor,1,activate=tf.nn.sigmoid)
         return tensor
@@ -160,10 +179,15 @@ def train(gan,datasets):
     fake_d_loss = gan.compute_fake_D_loss(fake_logits)
     fake_d_loss_z = gan.compute_fake_D_loss(fake_logits_z)
     d_loss = real_d_loss+fake_d_loss+fake_d_loss_z
-    recon_loss = gan.recon_loss(real_example,fake_example)
-    e_loss = e_loss+recon_loss
-    g_loss =  gan.compute_G_loss(fake_logits)+recon_loss+gan.compute_G_loss(fake_logits_z)
+    # d_loss = real_d_loss+fake_d_loss_z
 
+    recon_loss = gan.recon_loss(real_example,fake_example)
+    # recon_loss =0
+    e_loss = e_loss+1*recon_loss
+    # e_loss = recon_loss
+    #
+    # g_loss =  gan.compute_G_loss(fake_logits)+1*recon_loss+gan.compute_G_loss(fake_logits_z)
+    g_loss = recon_loss+gan.compute_G_loss(fake_logits_z)
 
 
     dz_op = gan.train_op(dz_loss, 'z_D')
@@ -171,7 +195,7 @@ def train(gan,datasets):
     d_op = gan.train_op(d_loss,'D')
     g_op = gan.train_op(g_loss,'G')
 
-    predict = tf.less_equal((fake_logits), 0.5)
+    predict = tf.less_equal((fake_logits_z), 0.5)
     # p_label = tf.argmax(false_labels,1,output_type=tf.int32)
     acc = tf.reduce_mean(tf.cast(predict, tf.float32))
     tf.summary.scalar('acc', acc)
@@ -184,6 +208,7 @@ def train(gan,datasets):
     global_step = tf.assign_add(global_step, 1)
     init_op = tf.global_variables_initializer()
     train_op = [e_op,g_op,d_op,dz_op]
+    # train_op = [d_op,g_op]
     with tf.Session() as sess:
             utils.load_or_initial_model(sess, FLAGS.ckpt, saver, init_op)
             a = 0
@@ -213,11 +238,18 @@ def train(gan,datasets):
                     # saver.save(sess, FLAGS.ckpt, global_step=g_step)
                     fig = utils.plot(samples)
                     plt.savefig('out/{}.png'.format(str(i).zfill(3)), bbox_inches='tight')
-                    i += 1
                     plt.close(fig)
+
+                    samples = sess.run(fake_example_z, feed_dict=feed_dict)
+                    samples = samples[:16]
+                    fig = utils.plot(samples)
+                    plt.savefig('out/{}_1.png'.format(str(i).zfill(3)), bbox_inches='tight')
+                    plt.close(fig)
+
                     fig = utils.plot(data[0][:16])
-                    plt.savefig('out/{}_.png'.format(str(i).zfill(3)), bbox_inches='tight')
+                    plt.savefig('out/{}_2.png'.format(str(i).zfill(3)), bbox_inches='tight')
                     plt.close(fig)
+                    i += 1
 
 
 def main():
